@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="CRUD CABECERA"
+        android:textSize="30dp" />
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha: dd-mm-aa"
+        >
+
+        <EditText
+            android:id="@+id/txt_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="datetime"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clientes"/>
+
+
+        <Spinner
+            android:id="@+id/id_clientes"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:baselineAligned="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Forma de Pago:" />
+
+
+    <Spinner
+        android:id="@+id/id_formaPago"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:baselineAligned="false" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/id_buttonCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Listado"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/lista_resultados"
+        android:layout_width="match_parent"
+        android:layout_height="158dp">
+
+    </ListView>
+
+</LinearLayout>

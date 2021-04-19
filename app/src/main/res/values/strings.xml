@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Productos</string>
+    <string name="avigation_drawer_open">Productos</string>
+    <string name="avigation_drawer_close">Productos</string>
+</resources>

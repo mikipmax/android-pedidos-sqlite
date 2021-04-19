@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/first_section">
+
+        <item
+            android:id="@+id/nav_cliente"
+
+            android:checked="true"
+            android:title="Cliente"/>
+        <item
+            android:id="@+id/nav_cab_pedido"
+
+            android:title="Cabecera Pedido"/>
+        <item
+            android:id="@+id/nav_det_pedido"
+
+            android:title="Detalle Pedido"/>
+        <item
+            android:id="@+id/nav_producto"
+
+            android:title="Producto"/>
+
+        <item
+            android:id="@+id/nav_forma_pago"
+
+            android:title="Forma de Pago"/>
+    </group>
+
+
+
+</menu>
